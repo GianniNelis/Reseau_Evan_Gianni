@@ -137,7 +137,7 @@ class Menu_User_Window(QDialog):
         self.setGeometry(250, 100, 1000, 750)
         self.setWindowTitle("IPPY")
         self.menuW = None
-        # 1. Layout principal de la fenêtre
+        # --- Layout principal de la fenêtre --- #
         layout_principal = QVBoxLayout(self)
 
         layout_haut=QHBoxLayout()

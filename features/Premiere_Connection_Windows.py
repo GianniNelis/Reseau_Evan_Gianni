@@ -26,6 +26,7 @@ class Premiere_Connection_Windows(QDialog):
         self.enregistrement_super_admin()
 
     def enregistrement_super_admin(self):
+        # --- manipulation dans la base de données --- #
         cnx = obtenir_connexion(self)
         cursor = cnx.cursor()
         codeSecret = pwd.genererCodeSecret()
@@ -47,7 +48,7 @@ class Premiere_Connection_Windows(QDialog):
         self.setGeometry(250, 100, 1000, 750)
         self.setWindowTitle("IPPY")
         self.menuW = None
-        # 1. Layout principal de la fenêtre
+        # --- Layout principal de la fenêtre --- #
         layout_principal = QVBoxLayout(self)
 
         layout_haut=QHBoxLayout()
